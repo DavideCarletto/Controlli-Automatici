@@ -14,6 +14,7 @@ Kf = dcgain(s*Gp)
 
 figure, bode(Gp)
 figure, nyquist(Gp)
+axis equal
 
 Kc = -1.5;
 
@@ -29,7 +30,7 @@ md = 4;
 xd = 1.5;
 taud = xd/wc_des;
 
-Rd = (1+taud*s)/(1+taud/md*s);
+Rd = (1+taud*s)/(1+taud/md*s)
 
 Ga2 = Ga1*Rd^2;
 

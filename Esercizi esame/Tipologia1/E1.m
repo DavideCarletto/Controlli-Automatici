@@ -68,7 +68,9 @@ T = 0.002;
 Gazoh = Ga/(1+T/2*s);
 figure, margin(Gazoh)
 
-Fd = c2d(F, T, 'zaoh')
+Fd = c2d(F, T, 'zoh')
+
+
 
 Cz1 = c2d(C, T, 'tustin'); %conviene lui perchè mi da sovraelongazione minore
 Cz2 = c2d(C, T, 'match');
